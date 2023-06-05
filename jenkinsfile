@@ -13,6 +13,7 @@ pipeline {
                      sh 'npm install'
                      sh 'npm run sample.test.js'
                 }
+                browserStackReportPublisher 'automate'
                 echo 'welcome to test'
             }
         }

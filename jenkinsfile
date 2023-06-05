@@ -14,7 +14,7 @@ pipeline {
                 browserstack(credentialsId: '9a6f78db-dc64-41b5-a950-754079335050') {
                      echo "hello from browserStack"
                      sh 'npm install'
-                     sh 'npm run sample.test'
+                     sh 'npm run sample-test'
                 }
                 browserStackReportPublisher 'automate'
                 echo 'welcome to test'

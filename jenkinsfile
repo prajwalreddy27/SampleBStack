@@ -8,6 +8,9 @@ pipeline {
         }
         stage('Test') { 
             steps {
+                browserstack(credentialsId: '9a6f78db-dc64-41b5-a950-754079335050') {
+                     echo "hello from browserStack"
+                }
                 echo 'welcome to test'
             }
         }
